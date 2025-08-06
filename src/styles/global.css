@@ -8,7 +8,7 @@
 /* Fonte padrão */
 body {
   font-family: "Inter", sans-serif;
-  background-color: var(--preto);
+  background-color: var(--vermelho-escuro);
   color: var(--branco);
   line-height: 1.6;
 }
@@ -36,4 +36,16 @@ img {
 /* Espaçamentos padrão */
 section {
   padding: 4rem 0;
+}
+
+h3 {
+  font-family: "Bungee", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p {
+  font-family: "Bungee", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }

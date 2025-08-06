@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { sobre } from "@/data/sobre";
+
+const dados = sobre;
+</script>
 <template>
   <section id="sobre" class="section" data-aos="fade-up">
     <div class="container">
@@ -19,11 +24,6 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import { sobre } from "@/data/sobre";
-
-const dados = sobre;
-</script>
 
 <style scoped>
 .section {

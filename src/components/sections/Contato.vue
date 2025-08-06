@@ -1,13 +1,18 @@
+<script setup lang="ts">
+import { contato } from "@/data/contato";
+
+import WaveBackground from "../common/WaveBackground.vue";
+
+const dados = contato;
+</script>
+
 <template>
   <section id="contato" class="section" data-aos="fade-up">
+    <WaveBackground color="var(--dourado)" />
     <div class="container">
       <h2 class="section-title">Contato</h2>
 
-      <form
-        action="https://formspree.io/f/seu-endpoint"
-        method="POST"
-        class="form-contato"
-      >
+      <form action="https://formspree.io/f/seu-endpoint" method="POST" class="form-contato">
         <label for="nome">Nome</label>
         <input type="text" id="nome" name="name" required />
 
@@ -28,21 +33,18 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import { contato } from "@/data/contato";
-
-const dados = contato;
-</script>
-
 <style scoped>
 .section {
   padding: 4rem 0;
   color: var(--branco);
+  z-index: 4;
 }
 
 .section-title {
   font-size: 2rem;
-  color: var(--vermelho-escuro);
+  color: var(--cinza-claro);
+  margin-top: 100px;
+  text-decoration: underline;
   margin-bottom: 2rem;
 }
 
