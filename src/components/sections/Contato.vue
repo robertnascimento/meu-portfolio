@@ -7,7 +7,7 @@ const dados = contato;
 </script>
 
 <template>
-  <section id="contato" class="section" data-aos="fade-up">
+  <section id="contato" class="section">
     <WaveBackground color="var(--dourado)" />
     <div class="container">
       <h2 class="section-title">Contato</h2>
@@ -35,6 +35,7 @@ const dados = contato;
 
 <style scoped>
 .section {
+  position: relative;
   padding: 4rem 0;
   color: var(--branco);
   z-index: 4;

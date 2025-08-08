@@ -4,4 +4,5 @@ export interface Projeto {
   title_descricao: string;
   descricao: string;
   stack: string[];
+  imagem: string;
 }
